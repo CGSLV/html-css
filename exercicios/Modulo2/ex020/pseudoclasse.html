@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-classes</title>
+    <style>
+
+        div {
+            display: inline-block; /*Mostrar tudo na mesma linha*/
+            border: black solid 1px;
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+    /*    PSEUDO-CLASSE   */
+    /*    Relacionadas ao ESTADO do elemento, se está marcado, com mouse em cima (hover), ativo...
+    # - ID
+    . - class
+    : - subclass
+    */
+
+
+        /*Configuração de ESTADO, só fica amarelo QUANDO passa o mouse em cima*/
+        div:hover {
+            background-color: yellow;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<h1>Pseudo-classes</h1>
+
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+<!--    DIV é um contêiner genérico de bloco usado para agrupar outros elementos HTML, permitindo organizar o conteúdo da página em seções lógicas
+    Por padrão ela vem vai da ponta esquerda para a ponta direita da página, mas você pode modificar seu tamanho como fizemos configurando height e width (altura e largura)
+-->
+
+</body>
+</html>

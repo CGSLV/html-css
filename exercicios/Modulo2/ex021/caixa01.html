@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*Espessura da borda*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgoldenrod;
+
+            /*Simplificando:
+            border: 10px solid darkgoldenrod;
+            */
+
+
+
+            /*Na hora de configurar faça em sentido HORÁRIO, como um ponteiro de relógio (cima, direita, baixo, esquerda)*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+        /*    Simplificando:*/
+
+
+
+
+        /*    Mesma coisa com margin*/
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+
+        /*    Outline é menos usado, é como um tracejado fora na border, FICA DENTRO DA MARGEM*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        a {
+            border-width: 10px;
+            border-style: dashed;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+
+
+    /*    Tipos de border-style:
+          Solid - Linha solida
+          Dashed - Pontilhada
+          Dotted - Pontilhada com pontos
+          Double - Linha Dupla
+          Groove - Margem em 3D
+    */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+<!--    Para links de exemplo você pode colocar um # apenas para deixar o link válido-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*Em alguns casos especificos você pode precisar de REGRAS para problemas com compatibilidade e outros*/
+/*Regras são fontes no iniciozinho do style.css*/
+
+body {
+    background-color: #b7c2b3;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: #8686f3;
+}
+
+h2 {
+    color: #e472db;
+}
+
+p {
+    text-align: justify;
+}

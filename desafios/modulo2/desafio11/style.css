@@ -1,0 +1,17 @@
+
+/*Colocando a imagem do espaço como plano de fundo do site*/
+body {
+    background-image: url("imagens/espaco.jpg");
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 30em;
+}
+
+/*Deixando a imagem no centro do main*/
+img {
+    display: block;
+    margin: auto;
+    width: 600px;
+}

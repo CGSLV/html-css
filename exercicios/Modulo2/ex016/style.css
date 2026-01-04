@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Degrade*/
+
+body {
+    background-image: linear-gradient(to right, #FFD340, #FFBC24);
+}
+
+/*O conteúdo não pode estar dentro de um degrado ou algo colorido, o padrão é fundo branco letra preta*/
+
+main {
+    /*Coloca a cor de fundo branca*/
+    background-color: white;
+
+    /*Coloca a Largura com 600px, não precisa ocupar a tela toda*/
+    width: 600px;
+
+    /*Padding é o espaço que envolve o conteúdo, mas que ainda fica preso no BORDER, como 20px o conteudo fica mais "gordinho"*/
+    padding: 20px;
+
+    /*Centraliza o conteúdo no meio da tela, margin refere-se ao espaço desse elemento para os outros, automatico torna isso automatica independente do tamanho da tela*/
+    margin: auto;
+
+    /*  border-radius: Deixa os cantos achatados*/
+    border-radius: 10px;
+
+
+    box-shadow: 5px 5px 20px rgba(186, 136, 25, 0.62);
+/*    Parametros: Quanto de sombra do lado direito, quanto de sombra em baixo, quanto espalha, cor*/
+/*    Transformando rgb em rgb você pode controlar a transparencia da cor, que é o ultimo numero*/
+}
+
+/*Justificando o paragrafo*/
+p {
+    text-align: justify;
+}
+
+
+h1  {
+    color: #086CB4;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(11, 85, 135, 0.62);
+/*    Mesma coisa da box shadow, tente deixa um pouquinho acima da metade*/
+}
+
+h2  {
+    color: #008CDB;
+}

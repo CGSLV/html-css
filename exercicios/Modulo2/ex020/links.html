@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            /*Retira o sublinhado*/
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Se o link já foi visitado você pode configurar assim:*/
+        a:visited {
+            color: darkred;
+        }
+        /*Se não quiser que tenha diferença entre links visitados e não visitados retire essa opcao*/
+
+        /*Quando passa o mouse em cima o texto fica sublinhado, ótimo para menos e deixar o site mais vivo*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+
+        /*Esse é a opcao do link quando é CLICADO, segure o botao do mouse para ver melhor*/
+        a:active {
+            color: yellow;
+        }
+
+    /*    Pseudo elemento*/
+        a::after{
+            /*Avise que tipo de conteúdo*/
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    /*    Perceba que o conteudo em si da ancor não foi afetada, apenas o conteúdo periferico*/
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com">Site do Curso em Video</a></li>
+    </ul>
+
+<!--    O padrão em HTML é que os links já visitados fiquem em roxo e os não visitados em azul-->
+
+</body>
+</html>

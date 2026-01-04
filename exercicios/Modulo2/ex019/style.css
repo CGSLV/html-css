@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body {
+    background-color: #d5ffa2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: darkolivegreen;
+}
+
+
+/*Para diferenciar elementos de mesma tag use identificadores (atributo id=) nas tags html
+Seleciono apenas o h1 que tiver o principal
+
+# -> Identifica id
+. -> Identifica class
+
+Cuidado com maiusculas e minusculas, tem que ser tudo igual.
+*/
+#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+
+/*    Geralmente colocamos o nome do elemento + id: h1#principal tem a mesma funcao*/
+}
+
+/*Ambos são h1, mas apenas o com o id principal teve modificações a mais*/
+
+h2 {
+    color: darkgreen;
+}
+
+
+
+/*Seletores de classe, geralmente só é usado o nome da classe mesmo*/
+
+
+.basico {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #645f00;
+
+}
+
+.avancado {
+    color: #640012;
+
+}
+
+.destaque {
+    background-color: #c8c827;
+}
+
+/*Copie a cor e mude apenas a barra da cor para mudar a cor e manter no mesmo tom*/
+
+
+
+

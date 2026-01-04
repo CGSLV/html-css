@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispostivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+<!--     Está dizendo o seguinte: Ele vai carregar a foto Grande, mas se a tela tiver menos de 1000px vai carregar a imagem media   -->
+<!--     O ideal é você colocar uma folga de alguns pixels a mais da imagem, 1000->1050 700-> 750 ..
+
+        IMPORTANTE: A configuração da menor imagem TEM QUE VIR PRIMEIRO!!!
+        A base é a imagem padrão que você quer carregar (<img>) acima dela vem as imagens que você quer que apareçam a
+        medida que a janela do navegador diminui
+-->
+        <img src="imagens/foto-g.png" alt="Imagem flexícel">
+    </picture>
+
+<!--Tag picture permite criar varias fontes (sources) para as imagens-->
+
+
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+<!--   FORMA RECOMENDADA E MAIS ATUALIZADA-->
+
+    <audio controls preload="metadata">
+        <source src="midia/nebula-the_grey_room.mp3" type="audio/mpeg">
+    </audio>
+
+<!--A maioria dos navegadores bloqueia autoplay, use <audio> + <source> sem autoplay-->
+
+    <audio controls preload="metadata">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Evite arquivos tipo wav, são extremamente pesados, vai de mp3 mesmo, a melhor qualidade vai para o arquivo de download, nao de imagens ou audio -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+<!--    Se o navegador não conseguir carregar nada ele carrega isso-->
+    </audio>
+
+<!--A TAG <audio> funciona como a <picture> se ele não conseguir ler o primeiro ele lê os de baixo-->
+
+<!--
+ATRIBUTOS de audio:
+
+preload - mostra as opcoes de carregar audio todo (auto), apenas algunas dados (metadata) ou não carregar nada (none)
+O mais recomendado é o metadata
+
+autoplay - toca a musica automaticamente, evite     - Não recomendado
+
+controls - mostra aqueles controles para dar play, pausar...
+
+loop - deixa o audio em loop   -   Não recomendado
+
+
+
+-->
+
+</body>
+</html>

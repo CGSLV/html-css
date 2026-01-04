@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*Importando a fonte do título*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@100..900&display=swap');
+
+
+/*Criando a fonte do Android*/
+@font-face {
+    font-family: 'Android font';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+
+
+/*Configuracao Universal para zerar tudo*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =======  Cabeçalho com degradê  ======= */
+header {
+    /*Configuração para fazer degrade com verde e verde escuro*/
+    background-image: linear-gradient(180deg, #3fe48b, #024702) ;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.45)
+}
+
+/*TITULO com fonte do google*/
+header > h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 3em;
+}
+
+header > p {
+    margin-bottom: 20px ;
+    color: aliceblue;
+}
+
+
+
+/*Colocando uma classe para nao afetar o padding do nav*/
+.cabecalho {
+    padding: 17px 10px;
+}
+
+
+/*  =======  MENU DE NAVEGACAO  =======*/
+nav {
+    text-align: left;
+}
+
+nav > a {
+    border-radius: 3px;
+    text-decoration: none;
+    color: #3da368;
+    font-weight: bold;
+    /*Cria uma certa distância entre cade elemento*/
+    padding: 10px;
+}
+
+/*    Animaçao de fade do menu*/
+nav > a:hover {
+    background-color: #30915e;
+    color: #024702;
+}
+
+
+
+
+
+
+
+body {
+    background-color: #fffac4;
+    /*Era isso que estava fazendo o header ficar como uma bordar flutuante, por isso a recomendação é fazer um seletor universeral e zerar tudo*/
+    margin: 0;
+}
+
+/* ====== CONTEUDO PRINCIPAL ====== */
+main {
+    background-color: white;
+
+
+    /*Parte importante para deixar o site responsivo, não coloque valores definidos para width tipo 1000px, height deve ser estabelecida automaticamente, coloque max-width e coloque um paddign para não ficar tudo grudadp*/
+    max-width: 1000px;   /* limite máximo */
+    width: 100%;;
+    padding: 20px;
+
+
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.titulos {
+    font-family: "Android font", cursive;
+    font-weight: normal;
+    color: #194a30;
+}
+
+section > h1 {
+    padding: 10px;
+}
+
+section > h2 {
+    /*Tem um padding maior dos lados que em cima e em baixo*/
+    padding: 1px 8px;
+    text-align: left;
+    /*Efeito degrade*/
+    background-image: linear-gradient(to right, rgba(73, 234, 151, 0.48), white);
+    margin-bottom: 16px;
+}
+
+section > p {
+    /*3 valores: cima direita_&_esquerda baixo*/
+    margin: 5px 5px 20px;
+    text-indent: 20px;
+    text-align: justify;
+    /*Distancias entre as linhas do paragrafo*/
+    line-height: 2;
+    font-size: 1em;
+}
+
+/* ===== Span normais =====*/
+
+span {
+    color: #247044;
+    font-weight: bold;
+}
+
+
+/*  ======= Spans com links  =======  */
+.link {
+    background-color: #c4f4d9;
+    padding: 3px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link::after {
+    content: "🔗";
+}
+
+p > a,
+p > a:visited {
+    text-decoration: none;
+    color: #247044;
+    font-weight: bold;
+}
+
+
+/* ===== Colocando imagem no meio ======*/
+/*Pega toda as img descendentes de section, não apenas as filhas
+img é inline por padrao, nao block
+*/
+section img {
+    display: block;
+    /*O margin auto que faz o trabalho de centralizar tudo, lembre-se: Margin - Distância de uma caixa a outra*/
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* ======= Configurações para o video =======
+
+"Divida" a parte do vídeo em uma div e uma class, nao tem segredo
+*/
+
+.video {
+    background-color: #235c3e; /* cor do bloco */
+    padding: 25px 40px;
+    margin: 30px -20px; /* "vaza" até a borda do main */
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+
+/* ======Conteúdo extra do artigo (parte final antes do rodapé) ======*/
+
+aside {
+    background-color: #c4f4d9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.45)
+}
+
+aside  h3 {
+    /*Deixando apenas o top (esquerda e direita superior) com borda*/
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 10px;
+    background-color: #63c67e;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+aside  p {
+    padding: 10px;
+    text-indent: 20px;
+
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+/*       =========   Colocando marcado personalizado   =========
+marker é a bolinha que aparece na frente do li do ul
+*/
+
+aside  ul {
+    padding: 10px 30px;
+}
+
+ul li::marker {
+    content: "✔ ";
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+/*    =========   Dividindo a lista em 2 partes com GRID  =========  */
+
+ul.lista  {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(7, auto);
+    gap: 6px 20px;
+}
+
+/*Ou só columns: 2;*/
+
+#paragrafo_final {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ====== Rodapé ======*/
+
+footer {
+    background-color: #194a30;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.link-cabecalho {
+    text-decoration: none;
+    color: white;
+}

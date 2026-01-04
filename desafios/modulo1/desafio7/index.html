@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F</p>
+
+    <picture>
+        <source media="(max-width: 810px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem ampla de paisagem">
+    </picture>
+
+<!--Quando você digite picture o source automatica vem com min-width, mas é mais lógico usar max-width, colocando as menores imagens em cima e a imagem principal no topo-->
+</body>
+</html>

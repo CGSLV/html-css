@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /*O simbolo > trata do filho do elememto, então ele só mexe no paragrafo que está dentro de div*/
+        div > p {
+            display: none;
+
+        }
+
+
+        /*Agora quero que o paragrafo escondido apareça quando passo o mouse em cima (hover) */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        /*Essa opcao de display: none e display: block vai ser muito util para MENUS*/
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+<!--        Paragrafo filho da div-->
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+<!--    Paragrafo fora do div, não é afetado-->
+    <p>Fim do exemplo</p>
+</body>
+</html>

@@ -183,14 +183,20 @@ section img {
 
 .video {
     background-color: #235c3e; /* cor do bloco */
-    padding: 25px 40px;
-    margin: 30px -20px; /* "vaza" até a borda do main */
+    position: relative;
+    height: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
 }
 
 .video iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    display: block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 

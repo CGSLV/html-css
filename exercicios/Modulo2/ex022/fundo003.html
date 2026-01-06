@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posição dos Fundos</title>
+    <style>
+        /*Separar por div + class é melhor que separar apenas por div*/
+        div.bloco{
+            background-image: url(imagens/wallpaper003.jpg);
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        div#q1 {
+            background-position: left top;
+        }
+
+        div#q2 {
+            background-position: left center;
+        }
+
+        div#q3 {
+            background-position: right bottom;
+        }
+
+        div#q4 {
+            background-position: center center;
+        }
+
+    /*    É uma imagem enorme, dependendo da posição ele parte de pontos diferentes, coloque o wallpaper 3 para melhorar a visualizacao*/
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+
+    <div class="bloco" id="q2"></div>
+
+    <div class="bloco" id="q3"></div>
+
+    <div class="bloco" id="q4"></div>
+</body>
+</html>

@@ -1,16 +1,18 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 :root {
-    --font1: 'Passion One', Arial, Helvetica, sans-serif;
+    --font1: 'Passion One', cursive;
     --font2: 'Sriracha', cursive;
+    --font3: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -19,22 +21,131 @@ body {
     background: lightgray;
 }
 
+
+/* ----- Cabeçalho ----- */
 header {
     background-color: black;
-    font-family: var(--font1);
     color: white;
     text-align: center;
+}
+
+header h1 {
+    font-family: var(--font1);
+    /*Variante que transforma as letras minusculas com formato das maiusculas mas pequenas*/
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 10vw;
+}
+
+header > p {
+    font-family: var(--font3);
+    padding-bottom: 50px;
+}
+
+/*Fazendo a configuração padrão para todos os links*/
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----- Parte principal ----- */
+
+main p {
+    font-family: var(--font2);
 
 }
 
-main.normal {
+section.normal {
     background-color: white;
+    color: black;
+}
+
+section {
+    /*Cada sessao independente da classe ganha 10% da altura da viewport*/
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    /*Tamanho da fonte em porcentagem da viewport*/
+    font-size: 3.5vw;
+    /*Espaçamento entre as linhas, nesse caso um espacamento duplo*/
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+main.imagem {
+    /*Mesmo colocando um background image coloque uma cor de fundo*/
+    background-color: #333333;
+    height: 100vh;
+
+
+;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 main #img1 {
+    /*Essa configurações TEM que ser dentro do id, tentar fazer no image main e nao deu*/
     background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main #img2 {
     background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
+
+/*main.imagem > p não tava indo, vá pela section*/
+section.imagem  p {
+    width: 400px;
+    /*Esse comando que faz o fundo circular o paragrafo certinho, */
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    text-shadow: black 1px 1px 0px;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+
+/* ----- Rodapé ----- */
+footer {
+    color: white;
+    background-color: black;
+    font-family: var(--font3);
+    text-align: center;
+    padding: 10px
+}
+
+
+
+
+/*Partes imporantes para resposividade do projeto:
+
+min-height de 100vh no body, a largura é toda a tela então deixa automatico
+
+letra do titulo com 10vw (viewport width) ocupando 10% da largura do dispositivo, independente do tamanho da tela
+Se quiser que a letra mantenha o mesmo tamanho use em
+
+Na section padding top e bottom de 10vh (10 porcenta da altura da viewport, independente do tamanho da tela)
+
+Font-size no Section de 3.5vw (largura da viewport)
+
+
+Concluindo: Sempre trabalhe baseado no tamanho da tela
+
+Para centralizar texto:
+Text-allign: center;
+padding-top de 50px no TITULO, Sim, não no header (mas acho que dá igual)
+padding-bottom de 50px (mesmo valor pra ficar certinho) no PARAGRAFO
+
+*/

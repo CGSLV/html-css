@@ -107,15 +107,13 @@ main #img2 {
 
 /*main.imagem > p não tava indo, vá pela section*/
 section.imagem  p {
-    width: 400px;
     /*Esse comando que faz o fundo circular o paragrafo certinho, */
     display: inline-block;
-    padding: 5px;
+    padding: 20px;
     color: white;
     text-shadow: black 1px 1px 0px;
     background-color: rgba(0, 0, 0, 0.514);
 }
-
 
 /* ----- Rodapé ----- */
 footer {

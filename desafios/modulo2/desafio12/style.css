@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font1: 'Passion One', Arial, Helvetica, sans-serif;
+    --font2: 'Sriracha', cursive;
+}
+
+body {
+    /*Altura 100% da tela (view port) a largura ocupa a tela toda, por isso é automatica*/
+    min-height: 100vh;
+    background: lightgray;
+}
+
+header {
+    background-color: black;
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
+
+}
+
+main.normal {
+    background-color: white;
+}
+
+main #img1 {
+    background-image: url("imagens/background001.jpg");
+}
+
+main #img2 {
+    background-image: url("imagens/background002.jpg");
+}

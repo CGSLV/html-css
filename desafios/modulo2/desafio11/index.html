@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio Astronauta</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /*Você tem que deixar o container de fora como relative*/
+            position: relative;
+            background-color: lightgray;
+            background-image: url("imagens/espaco.jpg");
+            background-repeat: no-repeat;
+            /*Transforme a altura do body em 100% da viewport, ele fique achatado por padrão, tire a imagem e cloque uma borda para visualizar*/
+            /*border: black solid 1px;*/
+            height: 100vh;
+        }
+
+        div > img {
+            /*Deixe o conteiner de dentro como absolute, explicações nas anotações*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="imagens/astronauta.png" alt="Astronauta flutuando no espaço">
+    </div>
+
+
+</body>
+</html>

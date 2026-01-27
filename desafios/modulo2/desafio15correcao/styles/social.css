@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Escondendo a scrollbar*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/*Fazendo a imagem cobrir toda a tela pois será carregado no iframe*/
+img {
+    width: 100vw;
+}
+
+a {
+    /*Para ficar em baixo da imagem*/
+    display: block;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Faz o botão ficar vermelho(forte) quando passa o mouse em cima*/
+a:hover {
+    background-color: red;
+}

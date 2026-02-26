@@ -10,5 +10,21 @@
     nav > a {
         display: block;
         margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    /*Só faz o menu aparecer quando a tela estiver pequena*/
+    span#burguer {
+        display: block;
+        background-color: #555353;
+        padding: 10px 0;
+        margin-bottom: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    span#burguer:hover {
+        background-color: #bdbaba;
+        color: black;
     }
 }

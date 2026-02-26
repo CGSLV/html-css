@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 
-/*   !!!! Não coloque o body com display flex, coloque uma das tags semanticas, nesse caso nav */
+    /*   !!!! Não coloque o body com display flex, coloque uma das tags semanticas, nesse caso nav */
 }
 
 /*Configurando header como flex*/
@@ -60,4 +60,9 @@ main > section {
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
+}
+
+/*Faz o menu hamburguer sem invisivel para tamanhos de tela grande*/
+span#burguer {
+    display: none;
 }

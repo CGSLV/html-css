@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+h1, h2 {
+    padding-bottom: 20px;
+}
+
+header p {
+    padding-bottom: 10px;
+}
+
+#imagem {
+    flex-flow: column nowrap;
+}
+
+
+
+
+main {
+    background-color: lightgray;
+}
+
+section {
+    padding-bottom: 40px;
+    display: flex;
+}
+
+
+img {
+    width: 500px;
+    align-self: flex-end;
+}
+
+h2 {
+    padding: 20px;
+    align-self: flex-start;
+}
+
+main p, div p {
+    padding: 5px 5px 5px 20px;
+}
+
+

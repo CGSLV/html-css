@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+
+/*   !!!! Não coloque o body com display flex, coloque uma das tags semanticas, nesse caso nav */
+}
+
+/*Configurando header como flex*/
+header {
+    background-color: gray;
+    color: white;
+    border: black dotted 1px;
+    padding-bottom: 25px ;
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+h1 {
+    text-shadow: 1px 1px 2px #000;
+    padding: 10px;
+}
+
+
+nav {
+    margin-top: 15px;
+
+}
+
+nav > a {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+
+}
+
+nav > a:hover {
+    background-color: lightgray;
+    color: black;
+    transition: background-color .5s;
+}
+
+main > section {
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}

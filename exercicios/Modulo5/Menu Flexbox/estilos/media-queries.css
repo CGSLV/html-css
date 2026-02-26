@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-flow: column nowrap;
+        text-align: center;
+        padding-bottom: 5px ;
+    }
+
+    nav > a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

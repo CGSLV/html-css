@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    /*Criando o grid*/
+    /*Como os tamanhos não são iguais seguidos não dá pra usar repeat()*/
+    grid-template: 2fr 1fr 8fr 1fr/ 1fr 2fr 1fr;
+    gap: 12px;
+
+}
+
+header {
+    /*display: grid;*/
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+nav#menu {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+main#prin {
+    grid-area: 3 / 1 / span 1/span 2  ;
+}
+
+aside#sec {
+    grid-area: 3 / 3 / span 1 / span 1  ;
+}
+
+footer#rodape {
+    grid-area: 4 / 1 / span 1 / -1  ;
+}
+
+.item {
+    background-color: yellow;
+    /*Centralizando dentro dos elementos*/
+    display: grid;
+    place-items: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+
+}

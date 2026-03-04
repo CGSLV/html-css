@@ -13,7 +13,7 @@ body {
     display: grid;
     /*Criando o grid*/
     /*Como os tamanhos não são iguais seguidos não dá pra usar repeat()*/
-    grid-template: 2fr 1fr 8fr 1fr/ 1fr 2fr 1fr;
+    grid-template: 2fr 1fr 8fr 1fr/ 3fr 1fr;
     gap: 12px;
 
 }
@@ -36,7 +36,7 @@ aside#sec {
 }
 
 footer#rodape {
-    grid-area: 4 / 1 / span 1 / -1  ;
+    grid-area: 4 / 1 / span 1 / 4  ;
 }
 
 .item {
